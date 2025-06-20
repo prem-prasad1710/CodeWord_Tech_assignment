@@ -140,7 +140,7 @@ export default function Dashboard() {
 						</CardContent>
 					</Card>
 				</div>
-				<div className="grid grid-cols-1 md:grid-cols-3 gap-14">
+				<div className="grid grid-cols-1 md:grid-cols-3 gap-4">
 					<Card className="md:col-span-2">
 						<CardHeader>
 							<CardTitle className="flex items-start">Overview</CardTitle>
