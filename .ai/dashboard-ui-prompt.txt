@@ -1,1 +1,1 @@
-// Prompt: Create a modular, responsive dashboard UI in React using Tailwind CSS, shadcn/ui, and recharts, matching the attached screenshot. Include cards for Total Revenue, Subscriptions, Sales, Active Now, a bar chart for Overview, a Recent Sales list, tabs, and a date picker. Use dummy data. All code should be clean and ready for production.
+// Prompt: Create a search field in the Navbar.
