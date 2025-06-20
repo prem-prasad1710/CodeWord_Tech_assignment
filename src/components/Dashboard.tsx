@@ -146,7 +146,7 @@ export default function Dashboard() {
 							<CardTitle className="flex items-start">Overview</CardTitle>
 						</CardHeader>
 						<CardContent>
-							<ResponsiveContainer width={600} height={250}>
+							<ResponsiveContainer width="100%" height={250}>
 								<BarChart data={revenueData} barSize={40}>
 									<XAxis dataKey="name" axisLine={false} tickLine={false} />
 									<YAxis
