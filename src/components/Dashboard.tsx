@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer } from "recharts";
+import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, Tooltip } from "recharts";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 import { CalendarIcon, DownloadIcon } from "lucide-react";
@@ -35,7 +35,7 @@ const recentSales = [
 export default function Dashboard() {
 	const [tab, setTab] = useState("overview");
 	return (
-		<div className="min-h-screen bg-muted/100">
+		<div>
 			<header className="flex flex-col md:flex-row items-start md:items-center px-4 md:px-6 py-4 border-b bg-white gap-4 md:gap-0">
 				<div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 w-full">
 					<div className="flex items-center gap-2">
@@ -61,7 +61,7 @@ export default function Dashboard() {
 				</div>
 				<div className="flex items-center gap-2 w-full sm:w-auto">
 					<input
-						className="rounded-md border px-3 py-1 text-sm w-full sm:w-auto"
+						className="rounded-md border px-3 py-1 text-sm w-full sm:w-auto bg-white placeholder-gray-400"
 						placeholder="Search..."
 					/>
 					<div className="rounded-full bg-gray-200 w-8 h-8 flex items-center justify-center font-bold text-gray-700">
@@ -85,7 +85,7 @@ export default function Dashboard() {
 							Download
 						</Button>
 					</div>
-				<h1 className="text-2xl md:text-3xl font-bold mb-2 text-left">
+				<h1 className="text-2xl md:text-1xl font-bold mb-2 text-left">
 					Dashboard
 				</h1>
 				<Tabs value={tab} onValueChange={setTab} className="mb-6">
@@ -154,6 +154,7 @@ export default function Dashboard() {
 										tickLine={false}
 										tickFormatter={(v) => `$${v}`}
 									/>
+									<Tooltip cursor={{ fill: '#f3f4f6' }} formatter={(value) => [`$${value}`, 'Revenue']} />
 									<Bar
 										dataKey="value"
 										fill="#000"
