@@ -25,7 +25,7 @@ This is a responsive and modern **Dashboard UI** built using **Next.js**, **Tail
 
 ## 🖥️ Screenshot
 
-> Replace this with your image path when hosting or submitting.
+> ![Dashboard Screenshot](https://raw.githubusercontent.com/prem-prasad1710/public/dashboard-preview.png)
 
 
 ---
