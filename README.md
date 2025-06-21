@@ -1,42 +1,44 @@
-# Dashboard UI Assignment
+# 🧩 Dashboard UI – React + Tailwind + Recharts
 
-This project is a responsive dashboard UI built with Vite, React, TypeScript, Tailwind CSS, shadcn/ui, and recharts.
+This is a responsive and modern **Dashboard UI** built using **Next.js**, **Tailwind CSS**, and **Recharts**, inspired by a professional admin interface layout.
 
-## Features
-- Clean, modular, and responsive layout
-- Cards, tabs, and bar chart (recharts)
-- Modern UI with shadcn/ui components
-- Dummy/static data for demonstration
-- All Gen-AI prompts used are saved in the `.ai` folder
+## 📌 Tech Stack
 
-## Getting Started
-
-1. **Install dependencies:**
-   ```sh
-   npm install
-   ```
-2. **Run the development server:**
-   ```sh
-   npm run dev
-   ```
-3. **Open your browser:**
-   Visit [http://localhost:5173](http://localhost:5173)
-
-## Project Structure
-- `src/` — Main source code
-- `.ai/` — Gen-AI prompts used
-- `.github/copilot-instructions.md` — Copilot custom instructions
-
-## Tech Stack
-- Vite
-- React + TypeScript
-- Tailwind CSS
-- shadcn/ui
-- recharts
-
-## Assignment by Prem Parsad for CodewordTech
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Charts**: [Recharts](https://recharts.org/)
+- **Components**: Custom-built using Tailwind + minimal external UI libs
 
 ---
 
-*Replace this README with more details as you build features.*
-#
+## ✨ Features
+
+- 💡 Clean and responsive dashboard layout
+- 📊 Interactive bar chart using Recharts
+- 📈 Key metric cards (Revenue, Sales, Subscriptions, Active Users)
+- 📋 Recent Sales list with customer info
+- 🧭 Navigation tabs with dummy logic
+- 🌓 Mobile-first design using Tailwind utilities
+- 📁 AI usage tracking (`.ai/prompts.md`)
+
+---
+
+## 🖥️ Screenshot
+
+> Replace this with your image path when hosting or submitting.
+
+
+---
+
+## 🚀 Getting Started
+
+```bash
+# Clone the repo
+git clone https://github.com/your-username/dashboard-ui.git
+cd dashboard-ui
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
